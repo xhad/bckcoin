@@ -25,7 +25,7 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 //TODO ((uint64_t)(-1)) equals to 18446744073709551616 coins
 //TODO or you can define number explicitly UINT64_C(986905600000000)
 const uint64_t MONEY_SUPPLY                                  = UINT64_C(986905600000000);
-const unsigned EMISSION_SPEED_FACTOR                         = 8;
+const unsigned EMISSION_SPEED_FACTOR                         = 21;
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
 //TODO Define number of blocks for block size median calculation
@@ -73,7 +73,7 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 } // parameters
 
 //TODO Put here the name of your currency
-const char     CRYPTONOTE_NAME[]                             = "BckCoin";
+const char     CRYPTONOTE_NAME[]                             = "crushcoin";
 const char     GENESIS_COINBASE_TX_HEX[]                     = "";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
@@ -106,8 +106,8 @@ const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "8f80f9a5a434a9f1
 
 //TODO Add here your network seed nodes
 const std::initializer_list<const char*> SEED_NODES = {
-  "192.168.0.158:15033",
-  "192.168.0.63:15033",
+  "175.193.247.54:15033",
+  "175.193.247.66:15033",
 };
 
 struct CheckpointData {
