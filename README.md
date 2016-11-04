@@ -6,6 +6,8 @@ This is the reference code for [CryptoNote](https://cryptonote.org) cryptocurren
 
 ## CryptoNote forking how-to
 
+sudo apt-get install build-essential python-dev gcc-4.9 g++-4.9 git cmake libboost1.58-all-dev librocksdb-dev
+
 ### Preparation
 
 1. Create an account on [GitHub.com](github.com)
